@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ToDoItems from "./Items";
 const App = () => {
   const [inputList, setInputList] = useState("")
   const [Items, setItems] = useState([])
@@ -27,7 +27,7 @@ const App = () => {
           <ol>
             {/* <li>{inputList}</li> */}
             {Items.map((itemval) => {
-              return <li>{itemval}</li>
+              return <ToDoItems text={itemval} />
             })}
 
 
