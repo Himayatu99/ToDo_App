@@ -1,8 +1,15 @@
 import React from 'react'
 const ToDoItems = (props) => {
+
     return (
         <>
-            <li>{props.text}</li>
+            <div className='todo_style'>
+                <button onClick={() => {
+                    props.onSelect(props.id)
+                }}>
+                </button>
+                <li>{props.text}</li>
+            </div>
         </>
     )
 }
