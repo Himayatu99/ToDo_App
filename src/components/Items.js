@@ -6,8 +6,7 @@ const ToDoItems = (props) => {
             <div className='todo_style'>
                 <button onClick={() => {
                     props.onSelect(props.id)
-                }}>
-                </button>
+                }}>X</button>
                 <li>{props.text}</li>
             </div>
         </>
